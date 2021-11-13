@@ -1,0 +1,307 @@
+@import 'reset.css';
+@import 'sidebar.css';
+.main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 100px 40px 20px;
+}
+
+.image-bg {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+  z-index: -2;
+}
+
+.desc {
+  padding: 100px 0 0 60px;
+}
+
+.desc h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.desc h2 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: "Quicksand", Arial, sans-serif;
+}
+
+.btn-outline-dark {
+  font-weight: 500;
+  font-family: "Quicksand", Arial, sans-serif;
+  color: black
+}
+
+.heading-meta {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.about-heading {
+  font-size: 20px;
+  margin-bottom: 4em;
+  padding-left: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  color: #000;
+  font-family: "Playfair Display"
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, .7)
+}
+
+.panel-heading {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.panel-titel {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #656a71;
+}
+
+.education-description {
+  padding: 10px 0 10px 50px;
+}
+
+.progress {
+  margin-bottom: 60px;
+}
+
+.services {
+  box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%);
+  background-color: white;
+  height: 130px;
+}
+
+.color-1 {
+  border-bottom: 2px solid #2c98f0;
+}
+
+.color-2 {
+  border-bottom: 2px solid #ec5453;
+}
+
+.color-3 {
+  border-bottom: 2px solid #f9bf3f;
+}
+
+.color-4 {
+  border-bottom: 2px solid #a84cb8;
+}
+
+.animated-box {
+  width: 25%;
+  text-align: center;
+}
+
+.animation {
+  padding: 50px 0 20px 0;
+}
+
+.services h3 {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.contact-item>.icon {
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background: #f2f3f7;
+  margin-right: 10px;
+  display: table
+}
+
+.contact-item>.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item>.red>p {
+  color: red;
+}
+
+.contact-item>.text>p {
+  color: #000;
+}
+
+.contact-p {
+  padding: 0;
+}
+
+.form-group {
+  margin-bottom: 20px
+}
+
+.form-control {
+  display: block;
+  appearance: none;
+  box-shadow: none;
+  border: transparent;
+  border: transparent;
+  background: #f2f3f7;
+  font-size: 16px;
+}
+
+.btn-send-message {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.fa-lightbulb, .fab {
+  color: blue;
+  font-size: 30px;
+  padding: 20px 15px;
+}
+
+.fa-css3-alt {
+  color: #ec5453;
+}
+
+.fa-js-square {
+  color: #f9bf3f;
+}
+
+.fa-bootstrap {
+  color: #a84cb8;
+}
+
+.fas, .fa-envelope {
+  display: table-cell;
+  vertical-align: middle;
+  color: #2c98f0;
+  font-size: 30px;
+}
+
+#icon-center {
+  display: table-cell;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-wrap {
+  max-width: 1200px;
+}
+
+.content {
+  width: calc(100% - 300px);
+  float: right;
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: center;  
+}
+
+.adapt-menu {
+  position: fixed;
+  z-index: 1;
+}
+
+.burger {
+  padding: 17px 15px 0 0;
+  display: none;
+}
+
+.fa-bars {
+  color: #000;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+
+
+@media (max-width: 576px) {
+  .contacts-row {
+    width: 100%;
+  }
+  .adapt-menu {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .nav-hide{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-form {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .active {
+    display: block;
+  }  
+}
+
+
+@media (max-width: 991px) {
+  .desc {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    min-width: 100%;
+  }
+}
