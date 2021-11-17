@@ -1,5 +1,7 @@
 import React from "react";
-
+import { FaPhone } from "react-icons/fa";
+import { FaMap } from "react-icons/fa";
+import { FaRegEnvelope } from "react-icons/fa";
 function Contacts() {
   return (
     <div className="main contacts" id="contacts-page">
@@ -11,7 +13,9 @@ function Contacts() {
         <div className="col-lg-12 col-xl-6">
           <div className="contact-item">
             <div className="icon">
-              <i className="far fa-envelope " id="icon-center"></i>
+              <i className="far fa-envelope " id="icon-center">
+                <FaRegEnvelope />
+              </i>
             </div>
             <div className="text">
               <p className="contact-p">
@@ -23,7 +27,9 @@ function Contacts() {
           </div>
           <div className="contact-item">
             <div className="icon">
-              <i className="fas fa-map-marked-alt" id="icon-center"></i>
+              <i className="fas fa-map-marked-alt" id="icon-center">
+                <FaMap />
+              </i>
             </div>
             <div className="red text">
               <p className="contact-p"> Ukraine, Rivne city</p>
@@ -31,7 +37,9 @@ function Contacts() {
           </div>
           <div className="contact-item">
             <div className="icon">
-              <i className="fas fa-phone" id="icon-center"></i>
+              <i className="fas fa-phone" id="icon-center">
+                <FaPhone />
+              </i>
             </div>
             <div className="text">
               <p className="contact-p">

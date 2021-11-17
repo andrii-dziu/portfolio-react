@@ -1,6 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { BsCheckCircleFill } from "react-icons/bs";
 
 function Education() {
   return (
@@ -15,11 +14,9 @@ function Education() {
           <div className="uk-timeline-item">
             <div className="uk-timeline-icon">
               <span className="uk-badge">
-                <FontAwesomeIcon
-                  icon={faCheckCircle}
-                  size="2x"
-                  style={{ color: "#2c98f0" }}
-                />
+                <i className="fas fa-check-circle">
+                  <BsCheckCircleFill />
+                </i>
               </span>
             </div>
             <div className="uk-timeline-content">
@@ -51,12 +48,9 @@ function Education() {
           <div className="uk-timeline-item">
             <div className="uk-timeline-icon">
               <span className="uk-badge">
-                <FontAwesomeIcon
-                  icon={faCheckCircle}
-                  size="2x"
-                  style={{ color: "#2c98f0" }}
-                />
-                {/* <i className="fas fa-check-circle"></i> */}
+                <i class="fas fa-check-circle">
+                  <BsCheckCircleFill />
+                </i>
               </span>
             </div>
             <div className="uk-timeline-content">

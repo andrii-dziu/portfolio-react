@@ -254,6 +254,9 @@ p {
   display: none;
 }
 
+.about-icon {
+  margin: 20px;
+}
 
 
 @media (max-width: 576px) {

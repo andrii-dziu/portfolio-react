@@ -1,4 +1,8 @@
 import React from "react";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaRegLightbulb } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
 
 function About() {
   return (
@@ -16,7 +20,9 @@ function About() {
         <div className="col-md-3 animated-box">
           <div className="services color-1">
             <span className="icon-2">
-              <i className="far fa-lightbulb"></i>
+              <i className="fab fa-lightbulb">
+                <FaRegLightbulb className="about-icon" />
+              </i>
               <h3>HTML</h3>
             </span>
           </div>
@@ -24,7 +30,9 @@ function About() {
         <div className="col-md-3 animated-box">
           <div className="services color-2">
             <span className="icon-2">
-              <i className="fab fa-css3-alt"></i>
+              <i className="fab fa-css3-alt">
+                <FaCss3Alt className="about-icon" />
+              </i>
               <h3>CSS</h3>
             </span>
           </div>
@@ -32,7 +40,9 @@ function About() {
         <div className="col-md-3 animated-box">
           <div className="services color-3">
             <span className="icon-2">
-              <i className="fab fa-js-square"></i>
+              <i className="fab fa-js-square">
+                <SiJavascript className="about-icon" />
+              </i>
               <h3>Java Script</h3>
             </span>
           </div>
@@ -40,7 +50,9 @@ function About() {
         <div className="col-md-3 animated-box">
           <div className="services color-4">
             <span className="icon-2">
-              <i className="fab fa-bootstrap"></i>
+              <i className="fab fa-bootstrap">
+                <FaBootstrap className="about-icon" />
+              </i>
               <h3>Bootstrap</h3>
             </span>
           </div>
